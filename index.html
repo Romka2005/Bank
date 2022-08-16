@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <section class="czk-ukr">
+            <div class="section__inner">
+                <span class="lang"></span>
+                <span class="money"></span>
+                <span class="data"></span>
+            </div>
+        </section>
+        <section class="ukr-czk">
+            <div class="section__inner">
+                <span class="lang"></span>
+                <span class="money"></span>
+                <span class="data"></span>
+            </div>
+        </section>
+    </header>
+    <form>
+        <select name="select" class="select">
+            <option value="CZK-UKR" class="czk_ukr">CZK-UKR</option>
+            <option value="UKR-CZK" class="ukr_czk">UKR-CZK</option>
+            <option value="PLN-UKR" class="pln_ukr">PLN-UKR</option>
+            <option value="UKR-PLN" class="ukr_pln">UKR-PLN</option>
+            <option value="CZK-PLN" class="czk_pln">CZK-PLN</option>
+            <option value="PLN-CZK" class="pln_czk">PLN-CZK</option>
+        </select>
+        <input type="text" class="input">
+        <input type="submit" value="Button" class="btn">
+        <span class="res"></span>
+    </form>
+    <script src="./scirpt.js"></script>
+</body>
+</html>
