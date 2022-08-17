@@ -30,16 +30,16 @@ async function Server(){
                 res.innerHTML = `Symbols aren't numbers!`;
             }
             switch(select.value){
-                case "CZK-UKR":
+                case "CZK-UAH":
                     num *= czk.rate;
                     break;
-                case "PLN-UKR":
+                case "PLN-UAH":
                     num *= pln.rate;
                     break;
-                case "UKR-CZK":
+                case "UAH-CZK":
                     num /= czk.rate;
                     break;
-                case "UKR-PLN":
+                case "UAH-PLN":
                     num /= pln.rate;
                     break;
                 case "CZK-PLN":
