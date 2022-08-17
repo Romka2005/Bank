@@ -1,6 +1,5 @@
 const url = "https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json";
-let now = `${new Date()}`;
-now = now.slice(0,25)
+let now = `${new Date()}`.slice(0,25);
 
 const money = document.querySelectorAll(".money");
 const lang = document.querySelectorAll(".lang");
