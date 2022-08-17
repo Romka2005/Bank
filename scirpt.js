@@ -26,6 +26,9 @@ async function Server(){
         button.onclick = () => {
             let input = document.querySelector("form .input").value;
             let num = input;
+            if(isNaN(num)){
+                res.innerHTML = `Symbols aren't numbers!`;
+            }
             switch(select.value){
                 case "CZK-UKR":
                     num *= czk.rate;
@@ -47,12 +50,7 @@ async function Server(){
                     break;
             }
             num = num.toFixed(2);
-            if(isNaN(num)){
-                res.innerHTML = `Symbols aren't numbers!`;
-            }
-            else{
-                res.innerHTML = `${num}`;
-            }
+            res.innerHTML = `${num}`;
             return false;
         };
         
