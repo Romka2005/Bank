@@ -18,7 +18,7 @@ async function Server(){
         let pln = result.find(item => item['r030'] == "985")
         let languages = [czk, pln];
         for (let i = 0; i < languages.length; i++) {
-            lang[i].innerHTML = languages[i].cc + '-UKR';
+            lang[i].innerHTML = languages[i].cc + '-UAH';
             money[i].innerHTML = languages[i].rate + '₴';
             data[i].innerHTML = now;
         }
